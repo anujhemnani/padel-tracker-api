@@ -73,7 +73,8 @@ async function fetchClubAvailability(
 
   const headers: Record<string, string> = {
     "Accept": "application/json",
-    "User-Agent": "padel-tracker-backend/1.0",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+    "Referer": "https://playtomic.com/",
   };
   if (PLAYTOMIC_COOKIE) {
     headers["Cookie"] = PLAYTOMIC_COOKIE;
